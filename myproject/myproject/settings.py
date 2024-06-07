@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import django_heroku
+import os
+
 
 
 
@@ -140,3 +142,6 @@ django_heroku.settings(locals())
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 PORT = 8000
+
+os.environ["PORT"] = str(PORT)
+
