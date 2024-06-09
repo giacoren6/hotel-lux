@@ -27,7 +27,6 @@ urlpatterns = [
     path('login/', views.login, name='login'),
     path('login_done/', views.login_done, name='login_done'),
     path('rooms/', views.rooms, name='rooms'),
-    path('signup/', views.signup, name='signup'),
 
 ]
 

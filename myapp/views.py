@@ -20,6 +20,3 @@ def login(request):
 
 def rooms(request):
     return render(request, "rooms.html")
-
-def signup(request):
-    return render(request, "signup.html")
